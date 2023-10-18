@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "pylsp-autoflake"
-version = "0.1.0"
+version = "0.1.1"
 authors = [
     {name = "bdvllrs", email = "bdvllrs@gmail.com"}
 ]
@@ -16,6 +16,14 @@ dependencies = [
   "python-lsp-server",
   "autoflake>=2.2.1",
 ]
+
+
+[project.urls]
+Homepage = "https://github.com/bdvllrs/pylsp-autoflake"
+"Bug Tracker" = "https://github.com/bdvllrs/pylsp-autoflake/issues"
+
+[project.optional-dependencies]
+dev = ["pytest"]
 
 [project.entry-points.pylsp]
 autoflake = "pylsp_autoflake.plugin"
